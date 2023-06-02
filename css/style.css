@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.55deg, #0537d9 65.50%,
+            #160380 94.50%);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    max-width: auto;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo_title {
+    flex-direction: column;
+    width: 16.6%;
+    height: 16.6%;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+
+a:hover {
+    color: #F7E600;
+}
+
+#t_conosco {
+    border: 3px solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#t_conosco:hover {
+    background-color: transparent;
+    color: #F7E600;
+    border-color: transparent;
+}
+
+main {
+    display: grid;
+    flex-direction: row;
+    margin-top: 100px;
+    grid-template-columns: 50% 50%;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 0;
+}
+
+#h2_chamado {
+    color: #F7E600;
+    font-size: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
+    padding-top: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-color: blue;
+
+}
+
+form [type="submit"] {
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    height: 20px;
+    width: 60%;
+    background-color: #F7E600;
+    padding: 5px 10px 35px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 130ms;
+}
+
+form [type="submit"]:hover {
+    color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+    height: 20px;
+    width: 65%;
+    border-color: rgb(17, 5, 119);
+    background-color: rgb(17, 5, 119);
+    padding: 5px 10px 35px 10px;
+}
+
+input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.imagem {
+    width: 95%;
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    color: #666d76;
+    padding-top: 10px;
+    margin-left: 400px;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menubtn {
+    background-color: transparent;
+    color: white;
+    padding: 3px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.conteudo {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-sizing: 0 8px 16px 0;
+}
+
+.menu:hover .conteudo {
+    display: block;
+}
+
+.menu:hover .menubtn {
+    background-color: transparent;
+}
